@@ -1,12 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="description" content="cv Iuliia Pidlisna" />
+    <meta property="og:image" content="./img/images-header.jpg">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- viewport шириной (ширину страницы, равную ширине экрана устройства) с начальным масштабированием 1 (Значение единица масштабирует страницу по умолчанию) и запретом пользователю масштабирования документа -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <title> cv </title>
+    <link rel="stylesheet" href="style.css" title="Basic" />
+
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64">
+    <!-- first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon72.png">
+    <!-- basic favicon -->
+    <link rel="icon" href="/favicon32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon16.png" type="image/png" sizes="16x16">
+
+    <!-- <link rel="icon" href="assets/favicon.ico"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/go.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="/path/to/styles/default.min.css">
+<script src="/path/to/highlight.min.js"></script>
+<script>hljs.highlightAll();</script> -->
+
+    <!-- <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script> -->
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </head>
+
 <body>
-    
+
+
+    <!--Header-->
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav" id="menu">
+                <!-- menu -->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link"> Contacts </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#summary" class="nav-link"> Summary </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link"> Skills </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#code" class="nav-link"> Code </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link"> Projects </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link"> Education </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#languages" class="nav-link"> Languages </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hobbies" class="nav-link"> Hobbies </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!--Main Area-->
+
+    <main class="main">
+        <div class="container" id="main">
+
+            <!--------  Main Area : aside  ------>
+
+            <div class="aside">
+
+                <header class="main-header">
+                    <section class="section" id="profile">
+                        <figure>
+                            <img class="avatar"
+                                src="https://github.com/IuliiaPi/CV/blob/main/assets/svg/myavatar.jpg?raw=true"
+                                alt="my photo" width="250" height="250" />
+                        </figure>
+
+                        <h1 class="section-title">Iuliia Pidlisna</h1>
+                        <h4 class="section-text"> Front-End Developer </h4>
+                    </section>
+                </header>
+
+                <section class="section" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <address class="section-text" class="address">
+                        <ul class="contacts-list">
+                            <li>Email: <a href="email:Julia.Pidlisna@gmail.com"> Julia.Pidlisna@gmail.com </a> </li>
+                            <li>Github: <a href="Github:IuliiaPi"> IuliiaPi </a> </li>
+                            <li>Telegram: <a href="Telegram:@IuliiaPi"> @IuliiaPi </a> </li>
+                            <li>Discord: <a href="Discord:IuliiaPi#7924"> IuliiaPi#7924 </a> </li>
+                        </ul>
+                        <address>
+                </section>
+
+                <section class="section" id="languages">
+                    <h2 class="section-title">Languages</h2>
+                    <ul class="section-text" class="languages-list">
+                        <li>English</li>
+                        <li>Ukrainian</li>
+                        <li>Russian</li>
+                    </ul>
+                </section>
+
+                <section class="section" id="hobbies">
+                    <h2 class="section-title">Hobbies</h2>
+                    <ul class="section-text" class="hobbies-list">
+                        <li>Music</li>
+                        <li>Yoga</li>
+                        <li>Painting</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!---------  Main Area : main-container ---------->
+
+            <div id="main-container">
+
+                <section class="section" id="summary">
+                    <h2 class="section-title">Summary</h2>
+                    <p class="section-text">
+                        I am a Junior Front-End Developer, who embrace and adapt quickly to new responsibilities, and am
+                        enthusiastic to gain new knowledge, skills, and techniques.
+                        <br>
+                        I like to read books, dance and yoga. I am prefer healthy lifestyle.
+                        <br>
+                        My goal is to find rewarding, but challenging new skills to build a solid foundation of
+                        knowledge.
+                    </p>
+                </section>
+
+                <section class="section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="section-text" class="skills-list">
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li> Version control: GIT, Github</li>
+                        <li> Graphics: Figma </li>
+                        <li> SVG </li>
+                    </ul>
+                </section>
+
+                <section class="section" id="code">
+                    <h2 class="section-title">Code</h2>
+                    <pre class="section-text" class="code"> <code class="language-html">
+            function mergeArrays(arr1, arr2) {
+              const newArray = [...new Set(arr1.concat(arr2))];
+              return newArray.sort((a, b) => a - b);
+            } </code> </pre>
+                </section>
+
+                <section class="section" id="projects">
+                    <h2 class="section-title">Projects</h2>
+                    <nav class="section-text" class="nav">
+                        <ul class="projects-list">
+                            <li class="nav-item">
+                                Calculate your Body Mass Index (BMI):
+                                <a href="#" class="nav-link"> BMI </a>
+                            </li>
+                            <li class="nav-item">
+                                Test your JavaScript skills :
+                                <a href="#" class="nav-link"> JS tests </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="section" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-text"> Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
+                        <span class="span-education-years"> (September 2004 - June 2010) </span>
+                    </p>
+                </section>
+
+                <section class="section" id="video">
+                    <h2 class="section-title">Video</h2>
+
+                    <video class="section-text" width="320" height="240" controls>
+                        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                        <source src="https://www.w3schools.com/html/movie.webm" type="video/webm">
+                        <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+                    </video>
+
+                </section>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="container" id="footer-container">
+
+            <div class="myGithub">
+                <a href="https://github.com/IuliiaPi">
+                    <img class="github" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                        alt="github" width="20" height="20" />
+                    IuliiaPi
+                </a>
+            </div>
+
+            <div>
+                <time> 2022 </time>
+            </div>
+
+            <div>
+                <a href="https://rs.school/js/">
+                    <img class="rs_school_img" src="https://rs.school/images/rs_school_js.svg" alt="rs_school"
+                        width="50" height="50" /></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
