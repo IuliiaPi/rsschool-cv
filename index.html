@@ -12,15 +12,15 @@
 
     <title> cv </title>
     <link rel="stylesheet" href="style.css" title="Basic" />
+    <link rel="icon" href="./assets/svg/favicon.ico">
 
-    <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64">
+    <!-- <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64"> -->
     <!-- first- and second-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon72.png">
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon72.png"> -->
     <!-- basic favicon -->
-    <link rel="icon" href="/favicon32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="/favicon16.png" type="image/png" sizes="16x16">
+    <!-- <link rel="icon" href="/favicon32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon16.png" type="image/png" sizes="16x16"> -->
 
-    <!-- <link rel="icon" href="assets/favicon.ico"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,9 +28,9 @@
         rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script>
     <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/go.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/go.min.js" defer></script>
 
     <!-- <link rel="stylesheet" href="/path/to/styles/default.min.css">
 <script src="/path/to/highlight.min.js"></script>
@@ -54,32 +54,32 @@
 
     <header class="header">
         <div class="container">
-            <nav class="nav" id="menu">
+            <nav class="nav menu">
                 <!-- menu -->
                 <ul class="nav__list">
-                    <li class="nav-item">
+                    <li class="nav__item">
                         <a href="#contacts" class="link nav__link"> Contacts </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav__item">
                         <a href="#summary" class="link nav__link"> Summary </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav__item">
                         <a href="#skills" class="link nav__link"> Skills </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav__item">
                         <a href="#code" class="link nav__link"> Code </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav__item">
                         <a href="#projects" class="link nav__link"> Projects </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav__item">
                         <a href="#education" class="link nav__link"> Education </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav__item">
                         <a href="#languages" class="link nav__link"> Languages </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#hobbies" class="link nav-link"> Hobbies </a>
+                    <li class="nav__item">
+                        <a href="#hobbies" class="link nav__link"> Hobbies </a>
                     </li>
                 </ul>
             </nav>
@@ -87,26 +87,25 @@
     </header>
 
 
-
     <!--Main Area-->
 
     <main class="main">
-        <div class="container" id="main">
+        <div class="container main__container">
 
             <!--------  Main Area : aside  ------>
 
-            <div class="aside">
+            <aside class="aside">
 
                 <header class="main__header">
                     <section class="section" id="profile">
-                        <figure>
-                            <img class="avatar"
-                                src="https://github.com/IuliiaPi/CV/blob/main/assets/svg/myavatar.jpg?raw=true"
-                                alt="my photo" width="250" height="250" />
+                        <figure class="user">
+                            <img class="user__img avatar"
+                                src="./assets/img/avatar.jpeg"
+                                alt="Iuliia Pidlisna - my photo" width="250" height="250" />
                         </figure>
 
                         <h1 class="section__title profile__title">Iuliia Pidlisna</h1>
-                        <h4 class="section__text"> Front-End Developer </h4>
+                        <h3 class="section__text profile__text"> Front-End Developer </h3>
                     </section>
                 </header>
 
@@ -114,10 +113,10 @@
                     <h2 class="section__title">Contacts</h2>
                     <address class="section__text address">
                         <ul class="contacts__list">
-                            <li>Email: <a href="mailto:Julia.Pidlisna@gmail.com" class="link contacts__link"> Julia.Pidlisna@gmail.com </a> </li>
-                            <li>Github: <a href="https://github.com/IuliiaPi" class="link contacts__link"> IuliiaPi </a> </li>
-                            <li>Telegram: <a href="Telegram:@IuliiaPi" class="link contacts__link"> @IuliiaPi </a> </li>
-                            <li>Discord: <a href="https://discord.com/channels/@me/976752789415948308" class="link contacts__link"> IuliiaPi#7924 </a> </li>
+                            <li class="contacts__item">Email: <a href="mailto:Julia.Pidlisna@gmail.com" class="link contacts__link"> Julia.Pidlisna@gmail.com </a> </li>
+                            <li class="contacts__item">Github: <a href="https://github.com/IuliiaPi" target="_blank" class="link contacts__link"> IuliiaPi </a> </li>
+                            <li class="contacts__item">Telegram: <a href="Telegram:@IuliiaPi" class="link contacts__link"> @IuliiaPi </a> </li>
+                            <li class="contacts__item">Discord: <a href="https://discord.com/channels/@me/976752789415948308" class="link contacts__link"> IuliiaPi#7924 </a> </li>
                         </ul>
                         <address>
                 </section>
@@ -139,11 +138,11 @@
                         <li>Painting</li>
                     </ul>
                 </section>
-            </div>
+            </aside>
 
             <!---------  Main Area : main-container ---------->
 
-            <div id="main__container">
+            <div class="main__content">
 
                 <section class="section" id="summary">
                     <h2 class="section__title">Summary</h2>
@@ -151,7 +150,7 @@
                         I am a Junior Front-End Developer, who embrace and adapt quickly to new responsibilities, and am
                         enthusiastic to gain new knowledge, skills, and techniques.
                         <br>
-                        I like to read books, dance and yoga. I am prefer healthy lifestyle.
+                        I like to read books, dance and yoga. I prefer a healthy lifestyle.
                         <br>
                         My goal is to find rewarding, but challenging new skills to build a solid foundation of
                         knowledge.
@@ -164,9 +163,9 @@
                         <li> JavaScript </li>
                         <li> HTML5 </li>
                         <li> CSS3, SASS </li>
-                        <li> Version control: GIT, Github </li>
                         <li> Graphics: Figma </li>
                         <li> SVG </li>
+                        <li> Version control: GIT, Github </li>
                         <li> Module Bundlers: Webpack </li>
                         <li> Editors: VS Code, IntelliJ IDEA </li>
                     </ul>
@@ -185,11 +184,11 @@
                     <h2 class="section__title">Projects</h2>
                     <nav class="section__text nav">
                         <ul class="projects__list">
-                            <li class="nav-item">
+                            <li class="nav__item">
                                 Calculate your Body Mass Index (BMI):
-                                <a href="#" class="link nav__link"> BMI </a>
+                                <a href="https://github.com/IuliiaPi/Body-Mass-Index" target="_blank" class="link nav__link"> BMI </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav__item">
                                 Test your JavaScript skills :
                                 <a href="#" class="link nav__link"> JS tests </a>
                             </li>
@@ -207,11 +206,15 @@
                 <section class="section" id="video">
                     <h2 class="section__title">Video</h2>
 
-                    <video class="section__text" width="320" height="240" controls>
-                        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-                        <source src="https://www.w3schools.com/html/movie.webm" type="video/webm">
-                        <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
-                    </video>
+                    <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/CDyx0WNKFLg?controls=1">
+                     </iframe>
+
+                    <!-- <video class="section__text" width="320" height="240" controls> -->
+                        <!-- <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4"> -->
+                        <!-- <source src="https://www.w3schools.com/html/movie.webm" type="video/webm"> -->
+                        <!-- <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg"> -->
+                    <!-- </video> -->
 
                 </section>
 
@@ -224,10 +227,10 @@
     <!--Footer-->
 
     <footer class="footer">
-        <div class="container" id="footer__container">
+        <div class="container footer__container">
 
             <div class="my-github">
-                <a class="link my-github__link" href="https://github.com/IuliiaPi">
+                <a class="link my-github__link" href="https://github.com/IuliiaPi" target="_blank">
                     <img class="my-github__img" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                         alt="my-github" width="20" height="20" />
                     IuliiaPi
@@ -239,7 +242,7 @@
             </div>
 
             <div class="rs-school">
-                <a class="link rs-school__link" href="https://rs.school/js/">
+                <a class="link rs-school__link" href="https://rs.school/js/" target="_blank">
                     <img class="rs-school__img" src="https://rs.school/images/rs_school_js.svg" alt="rs-school"
                         width="50" height="50" /></a>
             </div>
