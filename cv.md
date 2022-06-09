@@ -13,17 +13,19 @@
 ---
 
 ## SUMMARY
-I am a Junior Front-End Developer, who like lean something new, creative and experimenting. I like to read books, dance and yoga. I am prefer healthy lifestyle. My goal is to improve JavaScript skills and create new projects that will help people.
+I am a Junior Front-End Developer, who like lean something new, creative and experimenting. I like to read books, dance and yoga. I prefer healthy lifestyle. My goal is to improve JavaScript skills and create new projects that will help people.
 
 ---
 
 ## SKILLS
 * JavaScript
 * HTML5
-* CSS3
-* Version control: GIT, Github
+* CSS3, SASS
 * Graphics: Figma
 * SVG
+* Version control: GIT, Github
+* Module Bundlers: Webpack
+* Editors: VS Code, IntelliJ IDEA
 
 ---
 
