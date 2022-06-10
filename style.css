@@ -121,8 +121,8 @@ html {
 }
 
 .section__text {
-    margin: 0rem;
-  }
+  margin: 0rem;
+}
 
 /* @media(max-width: 768px) {
 
@@ -137,7 +137,7 @@ html {
   flex-direction: column;
   flex-wrap: wrap;
   /* max-width: 30%; */
-  
+
   border-right: 0.1rem solid skyblue;
   border-left: 0.1rem solid skyblue;
 
@@ -196,7 +196,7 @@ html {
 
 .footer {
   padding: 0.31rem;
-  clear: both; 
+  clear: both;
 
   font-size: 80%;
 
