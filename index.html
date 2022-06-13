@@ -3,15 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- name="description" content="cv Iuliia Pidlisna" /> -->
-    <meta property="og:image" content="./img/images-header.jpg">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <!-- viewport шириной (ширину страницы, равную ширине экрана устройства) с начальным масштабированием 1 (Значение единица масштабирует страницу по умолчанию) и запретом пользователю масштабирования документа -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title> cv </title>
+    <meta name="description" content="cv Iuliia Pidlisna">
+    <meta name="keywords" content="cv, Iuliia Pidlisna, Front-End Developer, Self Introduction">
+    <meta name="author" content="Iuliia Pidlisna">
+
+    <meta property="og:image" content="./assets/img/avatar.jpg">
+
     <link rel="stylesheet" href="style.css" title="Basic" />
     <link rel="icon" href="./assets/svg/favicon.ico">
 
@@ -22,11 +24,7 @@
     <!-- <link rel="icon" href="/favicon32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="/favicon16.png" type="image/png" sizes="16x16"> -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
+
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css" /> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" defer></script> -->
@@ -102,18 +100,17 @@
 
             <aside class="aside">
 
-                <header class="main__header">
+                <!-- <header class="main__header"> -->
                 <section class="section" id="profile">
-                    <h1 class="section__title profile__title">Iuliia Pidlisna</h1>
-                    
-                    <figure class="user">
-                        <img class="user__img avatar" src="./assets/img/avatar.jpeg" alt="Iuliia Pidlisna - my photo"
-                            width="250" height="250" />
-                    </figure>
 
+                    <figure class="user">
+                        <img class="user__img avatar" src="./assets/img/avatar.jpg" alt="Iuliia Pidlisna - my photo" />
+                        <!-- width="250" height="250" -->
+                    </figure>
+                    <h1 class="section__title profile__title">Iuliia Pidlisna</h1>
                     <h3 class="section__text profile__text"> Front-End Developer </h3>
                 </section>
-                </header>
+                <!-- </header> -->
 
                 <section class="section" id="contacts">
                     <h2 class="section__title">Contacts</h2>
@@ -184,11 +181,11 @@
 
                 <section class="section" id="code">
                     <h2 class="section__title">Code</h2>
-                    <pre class="section__text code"> <code class="language-html">
-            function mergeArrays(arr1, arr2) {
-              const newArray = [...new Set(arr1.concat(arr2))];
-              return newArray.sort((a, b) => a - b);
-            } </code> </pre>
+                    <pre class="section__text code" title="merge arrays"> <code class="language-html">
+    function mergeArrays(arr1, arr2) {
+      const newArray = [...new Set(arr1.concat(arr2))];
+      return newArray.sort((a, b) => a - b);
+      } </code> </pre>
                 </section>
 
                 <section class="section" id="projects">
@@ -221,7 +218,7 @@
                 <section class="section" id="education">
                     <h2 class="section__title">Education</h2>
                     <p class="section__text"> Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
-                        <span class="education__years"> (September 2004 - June 2010) </span>
+                        <span class="education__years"> (September&nbsp2004&nbsp- June&nbsp2010) </span>
                     </p>
                 </section>
 
