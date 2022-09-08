@@ -155,22 +155,11 @@ html {
   margin: 0rem;
 }
 
-/* @media (max-width: 768px) {
-
-  .header,
-  .footer {
-    width: 100%;
-  }
-
-} */
-
 .aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
   /* max-width: 30%; */
-
   border-right: 0.1rem solid skyblue;
   border-left: 0.1rem solid skyblue;
 
@@ -191,9 +180,7 @@ html {
 
 .avatar {
   /* width: 100%; */
-
   border-radius: 150px;
-  /* border-radius: 9.37rem; */
 }
 
 .profile__title {
@@ -243,6 +230,11 @@ html {
   color: #2d312d;
 }
 
+.video__iframe {
+  border: none;
+  border-radius: 20px;
+}
+
 /* Main styles end */
 
 
@@ -268,6 +260,7 @@ html {
 /* Footer styles end */
 
 
+/* Media styles start */
 
 @media (max-width: 920px) {
 
@@ -294,3 +287,5 @@ html {
   }
 
 }
+
+/* Media styles end */
