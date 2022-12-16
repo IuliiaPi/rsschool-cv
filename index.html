@@ -7,7 +7,6 @@
     <!-- viewport шириной (ширину страницы, равную ширине экрана устройства) с начальным масштабированием 1 (Значение единица масштабирует страницу по умолчанию) и запретом пользователю масштабирования документа -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> cv </title>
     <meta name="description" content="cv Iuliia Pidlisna">
     <meta name="keywords" content="cv, Iuliia Pidlisna, Front-End Developer, Self Introduction">
     <meta name="author" content="Iuliia Pidlisna">
@@ -15,7 +14,9 @@
     <meta property="og:image" content="./assets/img/avatar.jpg">
 
     <link rel="stylesheet" href="style.css" title="Basic">
-    <link rel="icon" href="./assets/svg/favicon.ico">
+    <link rel="shortcut icon" href="./assets/favicon_1.ico" sizes="16x16">
+
+    <title> cv </title>
 
     <!-- <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64"> -->
     <!-- first- and second-generation iPad: -->
@@ -51,13 +52,13 @@
 
 </head>
 
-<body class="body">
+<body class="wrapper">
 
 
     <!--Header-->
 
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <nav class="nav menu">
                 <!-- menu -->
                 <ul class="nav__list">
@@ -99,53 +100,67 @@
             <!--     Main Area : aside    -->
 
             <aside class="aside">
+                <div class="aside__container">
 
-                <!-- <header class="main__header"> -->
-                <section class="section" id="profile">
+                    <!-- <header class="main__header"> -->
+                    <section class="section" id="profile">
 
-                    <figure class="user">
-                        <img class="user__img avatar" src="./assets/img/avatar.jpg" alt="Iuliia Pidlisna - my photo">
-                        <!-- width="250" height="250" -->
-                    </figure>
-                    <h1 class="section__title profile__title">Iuliia Pidlisna</h1>
-                    <h3 class="section__text profile__text"> Front-End Developer </h3>
-                </section>
-                <!-- </header> -->
+                        <picture class="user">
+                            <source srcset="./assets/img/avatar.jpg" type="image/jpeg" media="(min-width:1330px)">
+                            <source srcset="./assets/img/avatar.jpg" type="image/jpeg" media="(min-width:992px)">
+                            <source srcset="./assets/img/avatar.jpg" type="image/jpeg" media="(max-width:992px)">
 
-                <section class="section" id="contacts">
-                    <h2 class="section__title">Contacts</h2>
-                    <address class="section__text">
-                        <ul class="contacts__list">
-                            <li class="contacts__item">Email: <a href="mailto:Julia.Pidlisna@gmail.com"
-                                    class="link contacts__link"> Julia.Pidlisna@gmail.com </a> </li>
-                            <li class="contacts__item">Github: <a href="https://github.com/IuliiaPi" target="_blank"
-                                    class="link contacts__link"> IuliiaPi </a> </li>
-                            <li class="contacts__item">Telegram: <a href="Telegram:@IuliiaPi"
-                                    class="link contacts__link"> @IuliiaPi </a> </li>
-                            <li class="contacts__item">Discord: <a
-                                    href="https://discord.com/channels/@me/976752789415948308"
-                                    class="link contacts__link"> IuliiaPi#7924 </a> </li>
+                            <img class="user__img avatar" src="./assets/img/avatar.jpg"
+                                alt="Iuliia Pidlisna - avatar">
+                        </picture>
+
+                        <!-- <figure class="user"> -->
+                            <!-- <img class="user__img avatar" src="./assets/img/avatar.jpg" -->
+                                <!-- alt="Iuliia Pidlisna - avatar"> -->
+                            <!-- width="250" height="250" -->
+                        <!-- </figure> -->
+
+                        <h1 class="section__title profile__title">Iuliia Pidlisna</h1>
+                        <h3 class="section__content profile__text"> Front-End Developer </h3>
+                    </section>
+                    <!-- </header> -->
+
+                    <section class="section" id="contacts">
+                        <h2 class="section__title">Contacts</h2>
+                        <address class="section__content">
+                            <ul class="contacts__list">
+                                <li class="contacts__item">Email: <a href="mailto:Julia.Pidlisna@gmail.com"
+                                        class="link contacts__link"> Julia.Pidlisna@gmail.com </a> </li>
+                                <li class="contacts__item">Github: <a href="https://github.com/IuliiaPi" target="_blank"
+                                        class="link contacts__link"> IuliiaPi </a> </li>
+                                <li class="contacts__item">Telegram: <a href="Telegram:@IuliiaPi"
+                                        class="link contacts__link"> @IuliiaPi </a> </li>
+                                <li class="contacts__item">Discord: <a
+                                        href="https://discord.com/channels/@me/976752789415948308"
+                                        class="link contacts__link"> IuliiaPi#7924 </a> </li>
+                            </ul>
+                        </address>
+                    </section>
+
+                    <section class="section" id="languages">
+                        <h2 class="section__title">Languages</h2>
+                        <ul class="section__content languages__list">
+                            <li>English</li>
+                            <li>Ukrainian</li>
+                            <li>Russian</li>
                         </ul>
-                    </address>
-                </section>
+                    </section>
 
-                <section class="section" id="languages">
-                    <h2 class="section__title">Languages</h2>
-                    <ul class="section__text languages__list">
-                        <li>English</li>
-                        <li>Ukrainian</li>
-                        <li>Russian</li>
-                    </ul>
-                </section>
+                    <section class="section" id="hobbies">
+                        <h2 class="section__title">Hobbies</h2>
+                        <ul class="section__content hobbies__list">
+                            <li>Music</li>
+                            <li>Yoga</li>
+                            <li>Painting</li>
+                        </ul>
+                    </section>
 
-                <section class="section" id="hobbies">
-                    <h2 class="section__title">Hobbies</h2>
-                    <ul class="section__text hobbies__list">
-                        <li>Music</li>
-                        <li>Yoga</li>
-                        <li>Painting</li>
-                    </ul>
-                </section>
+                </div>
             </aside>
 
             <!--     Main Area : main-container   -->
@@ -154,17 +169,19 @@
 
                 <section class="section" id="summary">
                     <h2 class="section__title">Summary</h2>
-                    <p class="section__text">
-                        I am a Junior Front-End Developer, who embrace and adapt quickly to new responsibilities, and am
-                        enthusiastic to gain new knowledge, skills, and techniques. I like to read books, dance and
-                        yoga. I prefer a healthy lifestyle. My goal is to find rewarding, but challenging new skills to
-                        build a solid foundation of knowledge.
-                    </p>
+                    <div class="section__content">
+                        <p>I am a Junior Front-End Developer, who embrace and adapt quickly to new responsibilities, and
+                            am enthusiastic to gain new knowledge, skills, and techniques.</p>
+                        <p>I like to read books, dance and yoga.</p>
+                        <p>I prefer a healthy lifestyle.</p>
+                        <p>My goal is to find rewarding, but challenging new skills to build a solid foundation of
+                            knowledge.</p>
+                    </div>
                 </section>
 
                 <section class="section" id="skills">
                     <h2 class="section__title">Skills</h2>
-                    <ul class="section__text skills__list">
+                    <ul class="section__content skills__list">
                         <li> JavaScript </li>
                         <li> HTML5 </li>
                         <li> CSS3, SASS </li>
@@ -178,16 +195,16 @@
 
                 <section class="section" id="code">
                     <h2 class="section__title">Code</h2>
-                    <pre class="section__text code" title="Merge two sorted arrays into one"> <code class="language-html">
+                    <pre class="section__content code" title="Merge two sorted arrays into one"> <code class="language-html">
     function mergeArrays(arr1, arr2) {
       const newArray = [...new Set(arr1.concat(arr2))];
-      return newArray.sort((a, b) => a - b);
+      return newArray.sort((a, b) =&gt; a - b);
       } </code> </pre>
                 </section>
 
                 <section class="section" id="projects">
                     <h2 class="section__title">Projects</h2>
-                    <nav class="section__text nav">
+                    <nav class="section__content nav">
                         <ul class="projects__list">
                             <li class="nav__item">
                                 Look CSS Mem Slider :
@@ -224,7 +241,7 @@
 
                 <section class="section" id="education">
                     <h2 class="section__title">Education</h2>
-                    <p class="section__text"> Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
+                    <p class="section__content"> Igor Sikorsky Kyiv Polytechnic Institute, Kyiv, Ukraine
                         <span class="education__years"> (September&nbsp;2004&nbsp;- June&nbsp;2010) </span>
                     </p>
                 </section>
@@ -258,19 +275,19 @@
             <div class="my-github">
                 <a class="link my-github__link" href="https://github.com/IuliiaPi" target="_blank">
                     <img class="my-github__img"
-                        src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="my-github"
+                        src="./assets/svg/github.png" alt="my github"
                         width="20" height="20">
                     IuliiaPi
                 </a>
             </div>
 
             <div class="time">
-                <time> 2022 </time>
+                <time class="copyright">&copy; 2022 </time>
             </div>
 
             <div class="rs-school">
-                <a class="link rs-school__link" href="https://rs.school/js/" target="_blank">
-                    <img class="rs-school__img" src="https://rs.school/images/rs_school_js.svg" alt="rs-school"
+                <a class="rs-school__link" href="https://rs.school/js/" target="_blank">
+                    <img class="rs-school__img" src="https://rs.school/images/rs_school_js.svg" alt="RS School"
                         width="50" height="50"></a>
             </div>
         </div>
