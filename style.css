@@ -1,20 +1,51 @@
+/* roboto-300 - latin */
 @font-face {
   font-family: 'Roboto';
-  src: url("assets/fonts/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+    url('./assets/fonts/roboto-v30-latin-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v30-latin-300.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
+  src: local(''),
+    url('./assets/fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v30-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* roboto-500 - latin */
 @font-face {
   font-family: 'Roboto';
-  src: url("assets/fonts/Roboto-Medium.ttf");
+  font-style: normal;
   font-weight: 500;
+  src: local(''),
+    url('./assets/fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v30-latin-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* roboto-700 - latin */
 @font-face {
   font-family: 'Roboto';
-  src: url("assets/fonts/Roboto-Bold.ttf");
+  font-style: normal;
   font-weight: 700;
+  src: local(''),
+    url('./assets/fonts/roboto-v30-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v30-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 
 @font-face {
   font-family: 'Roboto';
@@ -29,10 +60,10 @@
 *,
 *::before,
 *::after {
-    /* padding: 0; */
-    /* margin: 0; */
-    border: 0;
-    box-sizing: border-box;
+  /* padding: 0; */
+  /* margin: 0; */
+  border: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -61,13 +92,13 @@ h6 {
 
 html,
 body {
-    height: 100%;
-    
-    line-height: 1;
-    font-size: 16px;
-    background-color: azure;
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+
+  line-height: 1;
+  font-size: 16px;
+  background-color: azure;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -220,6 +251,8 @@ html {
 }
 
 .avatar {
+  width: 250px;
+  height: 250px;
   border-radius: 150px;
 }
 
@@ -309,12 +342,8 @@ html {
 
 @media (max-width: 860px) {
 
-  .wrapper { 
+  .wrapper {
     font-size: 1rem;
-  }
-
-  .avatar {
-    width: 250px;
   }
 
   .language-html {
@@ -332,6 +361,7 @@ html {
 
   .avatar {
     width: 200px;
+    height: 200px;
   }
 
   .language-html {
@@ -343,7 +373,7 @@ html {
 
 @media (max-width: 650px) {
 
-  .wrapper { 
+  .wrapper {
     font-size: 0.8rem;
   }
 
@@ -360,7 +390,7 @@ html {
 
 @media (max-width: 560px) {
 
-  .wrapper { 
+  .wrapper {
     font-size: 1rem;
   }
 
