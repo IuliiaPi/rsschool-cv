@@ -18,9 +18,9 @@ I am a Junior Front-End Developer, who like lean something new, creative and exp
 ---
 
 ## SKILLS
-* JavaScript
+* JavaScript, JSON
 * HTML5
-* CSS3, SASS
+* CSS3, SASS, Preprocessor SCSS, BEM methodology
 * Graphics: Figma
 * SVG
 * Version control: GIT, Github
