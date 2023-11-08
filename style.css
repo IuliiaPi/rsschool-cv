@@ -1,0 +1,418 @@
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+    url('./assets/fonts/roboto-v30-latin-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v30-latin-300.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./assets/fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v30-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('./assets/fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v30-latin-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('./assets/fonts/roboto-v30-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v30-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("assets/fonts/Roboto-Black.ttf");
+  font-weight: 900;
+}
+
+:root {
+  --main-color: rgb(42, 128, 165);
+}
+
+* {
+  /* padding: 0; */
+  /* margin: 0; */
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* img {
+  vertical-align: top;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+
+  line-height: 1;
+  font-size: 16px;
+  background-color: azure;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  /* границы и внутренние отступы будут учитываться в значениях, которые вы указываете в ширине и высоте элемента */
+  /* borders and vnytr otstyp bydyt ychituvatsia in width and height elements */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.13rem;
+  /* must be > 14px */
+  font-weight: 400;
+  line-height: 1.5;
+  /* po ymolchaniyu 1.3 */
+
+  color: black;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* .section-item {
+    position: relative;
+    padding-left: 30px;
+  } */
+
+/* .section-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #829985;
+  border-radius: 50%;
+  } */
+
+
+/* Header styles start */
+
+.header,
+.footer {
+  max-width: 100%;
+
+  border: 0.16rem solid lightblue;
+  background: rgba(144, 227, 238, 0.219);
+}
+
+.header {
+  font-size: 90%;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  list-style: none;
+}
+
+.link {
+  line-height: 2.5rem;
+
+  color: var(--main-color);
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: rgb(207, 207, 125);
+}
+
+.link:active {
+  color: var(--main-color);
+}
+
+.nav__item .nav__link {
+  padding: 0 1.25rem;
+  /* line-height: 50px; */
+}
+
+/* Header styles end */
+
+
+
+/* Main styles start */
+
+.main__container {
+  display: flex;
+}
+
+.section {
+  /* width: 50%; */
+  /* flex: 1 1 auto; */
+  padding: 1.25rem 1.25rem 1.25rem;
+  /* margin: 30px;  no auto */
+}
+
+.section__title {
+  margin: 0 0 1rem;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.31rem;
+
+  color: var(--main-color);
+}
+
+.section__content {
+  margin: 0rem;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* max-width: 30%; */
+  border-right: 0.1rem solid skyblue;
+  border-left: 0.1rem solid skyblue;
+
+  background-color: rgba(65, 228, 228, 0.192);
+}
+
+.main__header {
+  /* text-align: center; */
+
+  /* background-color: rgba(228, 250, 250, 0.685); */
+}
+
+.user {
+  margin: 0 0 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+}
+
+.profile__title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+
+  color: #2e7fab;
+}
+
+.profile__text {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contacts__list {
+  margin-bottom: 0;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  border-right: 0.1rem solid skyblue;
+  background-color: rgba(141, 225, 236, 0.089);
+}
+
+#code .section__title {
+  margin: 0;
+}
+
+.language-html {
+  padding: 0;
+  font-size: 1rem;
+}
+
+.projects__list {
+  margin-bottom: 0;
+}
+
+.education__years {
+  color: #2d312d;
+}
+
+.video__iframe {
+  border: none;
+  border-radius: 20px;
+}
+
+/* Main styles end */
+
+
+
+/* Footer styles start */
+
+.footer {
+  padding: 0.31rem;
+  clear: both;
+
+  font-size: 80%;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Footer styles end */
+
+
+
+/* Media styles start */
+
+@media (max-width: 920px) {
+
+  .language-html {
+    font-size: 0.83rem;
+  }
+
+}
+
+@media (max-width: 860px) {
+
+  .wrapper {
+    font-size: 1rem;
+  }
+
+  .language-html {
+    font-size: 0.75rem;
+  }
+
+  .video__iframe {
+    width: 290px;
+    height: 200px;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .language-html {
+    font-size: 0.65rem;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .wrapper {
+    font-size: 0.8rem;
+  }
+
+  .language-html {
+    font-size: 0.5rem;
+  }
+
+  .video__iframe {
+    width: 200px;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .wrapper {
+    font-size: 1rem;
+  }
+
+  .main__container {
+    flex-wrap: wrap;
+  }
+
+  .aside {
+    width: 100%;
+  }
+
+  .language-html {
+    font-size: 0.6rem;
+  }
+
+  .video__iframe {
+    width: 290px;
+    height: 200px;
+  }
+
+}
+
+/* Media styles end */
