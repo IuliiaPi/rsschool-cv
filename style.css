@@ -368,7 +368,7 @@ html,
   }
 
   .language-html {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .video__iframe {
@@ -386,7 +386,7 @@ html,
   }
 
   .language-html {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
 }
@@ -409,7 +409,7 @@ html,
 
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 600px) {
 
   .wrapper {
     font-size: 1rem;
@@ -424,12 +424,20 @@ html,
   }
 
   .language-html {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .video__iframe {
     width: 290px;
     height: 200px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .language-html {
+    font-size: 0.5rem;
   }
 
 }
